@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Palestine - Solidaritas dan Informasi</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo"><span class="typing-animation" id="typing-text"></span></a>
+        </div>
+    </header>
+    <main>
+        <section id="beranda" class="hero-section">
+            <div class="hero-video-wrapper">
+                <video autoplay loop muted playsinline class="hero-video">
+                    <source src="palestina.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animated-item" data-animation="fadeInUp">Solidaritas untuk Palestina Merdeka</h1>
+                    <p class="animated-item" data-animation="fadeInUp" data-delay="0.5s">Menyajikan informasi, berita terkini, dan kisah inspiratif untuk mendukung perjuangan rakyat Palestina.</p>
+                    <a href="#dukung" class="btn btn-primary animated-item" data-animation="fadeInUp" data-delay="1s">Bagaimana Anda Bisa Membantu?</a>
+                </div>
+            </div>
+        </section>
+        <section id="berita" class="content-section">
+            <div class="container">
+                <h2 class="animated-item" data-animation="fadeInUp"><i class="fas fa-newspaper icon-left"></i>Berita Terbaru (Video)</h2>
+                <div class="video-container">
+                    <video controls poster="/palestina2.png">
+                        <source src="/palestina2.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <video controls poster="/palestina3.png">
+                        <source src="/palestina3.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <video controls poster="/palestina4.png">
+                        <source src="/palestina4.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="sejarah" class="content-section bg-light">
+            <div class="container">
+                <h2 class="animated-item" data-animation="fadeInUp"><i class="fas fa-book-open icon-left"></i>Sejarah Konflik Israel-Palestina</h2>
+                <div class="history-timeline centered-timeline">
+                    <div class="timeline-item animated-item" data-animation="fadeInLeft">
+                        <i class="fas fa-landmark timeline-icon"></i>
+                        <h3>Deklarasi Balfour (1917)</h3>
+                        <p>Janji Inggris untuk mendukung pembentukan "rumah nasional" bagi orang Yahudi di Palestina.</p>
+                    </div>
+                    <div class="timeline-item animated-item" data-animation="fadeInRight" data-delay="0.2s">
+                        <i class="fas fa-flag timeline-icon"></i>
+                        <h3>Mandat Inggris (1920-1948)</h3>
+                        <p>Periode di mana Inggris menguasai Palestina, memicu ketegangan antara komunitas Arab dan Yahudi.</p>
+                    </div>
+                    <div class="timeline-item animated-item" data-animation="fadeInLeft" data-delay="0.4s">
+                        <i class="fas fa-exclamation-triangle timeline-icon"></i>
+                        <h3>Nakba & Pembentukan Israel (1948)</h3>
+                        <p>Pengusiran massal warga Palestina dan pembentukan negara Israel, yang dikenal sebagai 'Bencana' oleh Palestina.</p>
+                    </div>
+                    <div class="timeline-item animated-item" data-animation="fadeInRight" data-delay="0.6s">
+                        <i class="fas fa-gavel timeline-icon"></i>
+                        <h3>Perang Enam Hari (1967)</h3>
+                        <p>Israel menduduki Tepi Barat, Jalur Gaza, Yerusalem Timur, Dataran Tinggi Golan, dan Semenanjung Sinai.</p>
+                    </div>
+                    <div class="timeline-item animated-item" data-animation="fadeInLeft" data-delay="0.8s">
+                        <i class="fas fa-hand-paper timeline-icon"></i>
+                        <h3>Intifada Pertama & Kedua</h3>
+                        <p>Pemberontakan rakyat Palestina melawan pendudukan Israel.</p>
+                    </div>
+                    <div class="timeline-item animated-item" data-animation="fadeInRight" data-delay="1s">
+                        <i class="fas fa-globe-americas timeline-icon"></i>
+                        <h3>Situasi Kontemporer</h3>
+                        <p>Blokade Gaza, pembangunan permukiman, dan perjuangan berkelanjutan untuk hak-hak Palestina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kisah-warga" class="content-section">
+            <div class="container">
+                <h2 class="animated-item" data-animation="fadeInUp"><i class="fas fa-users icon-left"></i>Kisah Warga Palestina</h2>
+                <div class="grid-container">
+                    <article class="card story-card animated-item" data-animation="fadeInUp">
+                        <div class="card-content">
+                            <h3>Perjalanan Ahmad dari Gaza</h3>
+                            <p id="ahmad-ringkasan">Ahmad, seorang pemuda dari Gaza, berbagi pengalamannya hidup di bawah blokade dan harapannya untuk masa depan...</p>
+                            <button class="btn btn-secondary" onclick="tampilkanSelengkapnya('ahmad')">Baca Kisah Selengkapnya</button>
+                            <div id="ahmad-selengkapnya" style="display:none;">
+                                <p>Ahmad, seorang pemuda dari Gaza, telah mengalami hidup di bawah blokade sejak kecil. Ia bercita-cita menjadi seorang insinyur, tetapi kesulitan mendapatkan akses ke pendidikan yang layak karena pembatasan perjalanan dan kurangnya sumber daya. Meskipun demikian, Ahmad tetap optimis dan aktif dalam kegiatan komunitas untuk membantu sesama warga Gaza. Dia berharap suatu hari nanti dapat melihat Gaza yang merdeka dan sejahtera.</p>
+                                <button class="btn btn-secondary" onclick="sembunyikanSelengkapnya('ahmad')">Sembunyikan</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card story-card animated-item" data-animation="fadeInUp" data-delay="0.2s">
+                        <div class="card-content">
+                            <h3>Suara Hati Fatima dari Hebron</h3>
+                             <p id="fatima-ringkasan">Fatima, seorang ibu rumah tangga di Hebron, menceritakan tantangan sehari-hari dan ketabahannya...</p>
+                            <button class="btn btn-secondary" onclick="tampilkanSelengkapnya('fatima')">Baca Kisah Selengkapnya</button>
+                             <div id="fatima-selengkapnya" style="display:none;">
+                                <p>Fatima, seorang ibu rumah tangga di Hebron, harus menghadapi tantangan sehari-hari akibat pendudukan dan pembatasan yang diberlakukan oleh militer Israel. Rumahnya terletak di dekat permukiman ilegal, sehingga ia sering mengalami gangguan dan kekerasan dari para pemukim. Meskipun demikian, Fatima tetap tabah dan menjadi tulang punggung bagi keluarganya. Ia aktif dalam kelompok perempuan yang berjuang untuk hak-hak mereka dan memberikan dukungan kepada keluarga lain yang mengalami kesulitan serupa.</p>
+                                <button class="btn btn-secondary" onclick="sembunyikanSelengkapnya('fatima')">Sembunyikan</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="video-testimoni animated-item" data-animation="fadeInUp" data-delay="0.4s">
+                    <video
+                        id="testimoni-video"
+                        class="video-js vjs-default-skin"
+                        controls
+                        preload="auto"
+                        width="640"
+                        height="360"
+                        poster="/palestina5.png"
+                        data-setup='{"fluid": true}'>
+                        <source src="palestina5.mp4" type="video/mp4">
+                        <p class="vjs-no-js">
+                            Untuk melihat video ini, mohon aktifkan JavaScript, atau gunakan browser yang mendukung HTML5 video
+                        </p>
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="dukung" class="content-section bg-light">
+            <div class="container">
+                <h2 class="animated-item" data-animation="fadeInUp"><i class="fas fa-hand-holding-heart icon-left"></i>Bagaimana Anda Bisa Mendukung?</h2>
+                <div class="grid-container support-options">
+                    <div class="support-item animated-item" data-animation="fadeInUp">
+                        <i class="fas fa-donate support-icon"></i>
+                        <h3>Donasi Kemanusiaan</h3>
+                        <p>Bantu meringankan beban warga Palestina dengan donasi Anda.</p>
+                        <a href="https://bayarzakat.baznas.go.id/bantupalestina?gad_source=1&gad_campaignid=22928540088&gbraid=0AAAAAC5Tbj50xKMr-TecnViYu6kTOtFZF&gclid=EAIaIQobChMIk8bRm7D7jwMVSReDAx3lxzQBEAAYASAAEgK92PD_BwE" class="btn btn-primary">Donasi Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tentang" class="content-section">
+            <div class="container">
+                <h2 class="animated-item" data-animation="fadeInUp"><i class="fas fa-info-circle icon-left"></i>Tentang Kami</h2>
+                <p>Situs ini didedikasikan untuk menyebarkan informasi yang akurat dan meningkatkan kesadaran tentang perjuangan rakyat Palestina. Kami percaya pada pentingnya solidaritas global untuk mencapai keadilan dan perdamaian abadi.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Free Palestine</h3>
+                    <p>Menyuarakan kebenaran, menggalang solidaritas.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#sejarah">Sejarah</a></li>
+                        <li><a href="#berita">Berita</a></li>
+                        <li><a href="#dukung">Dukung</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Hubungi Kami</h3>
+                    <p>Email: muhammadalkafi@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Free Palestine. Hak Cipta Dilindungi.</p>
+                <p><a href="#">Kebijakan Privasi</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
